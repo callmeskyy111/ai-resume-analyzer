@@ -88,7 +88,7 @@ function Upload() {
     setStatusTxt("Analysis complete. Redirecting... ✅");
     console.log(data);
 
-    //navigate(`/resume/${uuid}`);
+    navigate(`/resume/${uuid}`);
   }
 
   function handleSubmit(evt: FormEvent<HTMLFormElement>) {

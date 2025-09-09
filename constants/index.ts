@@ -89,36 +89,6 @@ export const resumes: Resume[] = [
       },
     },
   },
-  {
-    id: "4",
-    companyName: "Microsoft",
-    jobTitle: "Cloud Engineer",
-    imagePath: "/images/resume_01.png",
-    resumePath: "/resumes/resume-2.pdf",
-    feedback: {
-      overallScore: 55,
-      ATS: {
-        score: 90,
-        tips: [],
-      },
-      toneAndStyle: {
-        score: 90,
-        tips: [],
-      },
-      content: {
-        score: 90,
-        tips: [],
-      },
-      structure: {
-        score: 90,
-        tips: [],
-      },
-      skills: {
-        score: 90,
-        tips: [],
-      },
-    },
-  },
 ];
 
 export const AIResponseFormat = `
@@ -168,11 +138,9 @@ export const AIResponseFormat = `
 export const prepareInstructions = ({
   jobTitle,
   jobDescription,
-  AIResponseFormat,
 }: {
   jobTitle: string;
   jobDescription: string;
-  AIResponseFormat: string;
 }) =>
   `You are an expert in ATS (Applicant Tracking System) and resume analysis.
   Please analyze and rate this resume and suggest how to improve it.

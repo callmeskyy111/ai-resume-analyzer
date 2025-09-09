@@ -9,7 +9,7 @@ import resume from "./resume";
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "ResuMind" },
+    { title: "ResuMetric" },
     { name: "description", content: "Smart feedback for your dream job" },
   ];
 }

@@ -6,7 +6,7 @@ import ATS from "~/components/Ats";
 import Details from "~/components/Details";
 
 export const meta = () => [
-  { title: "ResuMind | Review 🔎" },
+  { title: "ResuMetric | Review 🔎" },
   {
     name: "description",
     content: "Detailed Overview Your Resume",

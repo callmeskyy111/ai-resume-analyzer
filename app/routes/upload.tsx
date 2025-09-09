@@ -8,7 +8,7 @@ import { generateUUID } from "~/lib/utils";
 import { prepareInstructions } from "../../constants";
 
 const Upload = () => {
-  const { auth, isLoading, fs, ai, kv } = usePuterStore();
+  const { fs, ai, kv } = usePuterStore();
   const navigate = useNavigate();
   const [isProcessing, setIsProcessing] = useState(false);
   const [statusText, setStatusText] = useState("");
@@ -76,6 +76,8 @@ const Upload = () => {
     console.log(data);
     navigate(`/resume/${uuid}`);
   };
+
+
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
